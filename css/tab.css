@@ -1,0 +1,207 @@
+.link_area{
+    width: 100%;
+    height: 780px;
+    background-color: #1b1f25;
+    margin-bottom: 84px;
+}
+
+.link_hook{
+    width: 1440px;
+    height: 780px;
+    margin: 0 auto;
+}
+.link_tab{
+    width: 36%;
+    height: 100%;
+    float: left;
+    background-color: #1b1f25;
+}
+.tab_list{
+    height: 100%;
+    display: block;
+}
+.tab_list li{
+    opacity: 0.4;
+    position: relative;
+    height: 33.3%;
+}
+.tab_list li.current{
+    opacity: 1;
+}
+.tab_list li:after {
+    display: block;
+    content: "";
+    height: 66px;
+    width: 6px;
+    background: #1e52d8;
+    position: absolute;
+    left: 5%;
+    top: 47%;
+    opacity: 0;
+}
+.tab_list li.current:after {
+    display: block;
+    content: "";
+    height: 66px;
+    width: 6px;
+    background: #1e52d8;
+    left: 10%;
+    top: 47%;
+    opacity: 1;
+    transform: translate(38px,0px);
+    transition:left .3s opacity 0.3s ease-out,transform 0.3s cubic-bezier(0, 0, 0.51, 1.03);
+}
+
+.tab_list li.current .tit{
+    margin-left: 113px;
+}
+.tab_list li.current .txt{
+    margin-left: 113px;
+}
+.tab_list li .tit{
+    color: #fff;
+    margin-left: 95px;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 117px;
+    transition: all 0.3s ease-out;
+    font-family: 'TencentSansw7';
+}
+.link_area .tab_list .txt {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 166px;
+    margin-left: 95px;
+    transition: margin-left 0.3s ease-out;
+    font-family: 'TencentSansw3';
+}
+.link_area .tab_list li.current .icon{
+    display: block;
+    width: 54px;
+    height: 16px;
+    background: url(../img/icon_arrow_r.png)no-repeat 0 0;
+    position: absolute;
+    left: 0;
+    top: 196px;
+    margin-left: 118px;
+    opacity: 1;
+    transition: margin-left 0.3s ease-out,opacity 0.3s ease-out;
+    background-size: 100% 100%;
+}
+
+.link_content{
+    width: 64%;
+    height: 780px;
+    margin-left: 36%;
+    overflow: hidden;
+}
+.con1{
+    height: 100%;
+    display: block;
+}
+.con2{
+    height: 100%;
+    display: none;
+}
+.con3{
+    height: 100%;
+    display: none;
+}
+.con-list{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.con-list li{
+    display: block;
+    width: 50%;
+    height: 50%;
+    float: left;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.script{
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -84px;
+    transition: all .4s;
+}
+.con-list li:hover .script{
+    bottom: 0;
+}
+.con-list li:hover .icon{
+    opacity: 1;
+    right: 71px;
+}
+.script h4{
+    font-size: 24px;
+    margin: 50px 0 0 43px;
+    transition: margin-top 0.3s ease-out;
+    font-family: 'TencentSansw7';
+}
+.script p{
+    display: block;
+    margin-left: 43px;
+    margin-top: 9px;
+    line-height: 1.8;
+    font-size: 16px;
+    opacity: 1;
+    transform: translate(0px,15px);
+    transition: opacity 0.3s ease-out;
+    font-family: 'TencentSansw3';
+    margin-right: 43px;
+}
+.script .icon{
+    display: block;
+    height: 14px;
+    width: 31px;
+    background: url(../img/icon_arrow_r.png) no-repeat 0 0;
+    position: absolute;
+    right: 90px;
+    top: 71px;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    background-size: 100% 100%;
+}
+.con1 .item1{
+    background: url(../img/index_link_1_1.jpg);
+}
+.con1 .item2{
+    background: url(../img/index_link_1_2.jpg);
+}
+.con1 .item3{
+    background: url(../img/index_link_1_3.jpg);
+}
+.con1 .item4{
+    background: url(../img/index_link_1_4.jpg);
+}
+.con2 .item1{
+    background: url(../img/index_link_2_1.jpg);
+}
+.con2 .item2{
+    background: url(../img/index_link_2_2.jpg);
+}
+.con2 .item3{
+    background: url(../img/index_link_2_3.jpg);
+    width: 100%;
+}
+.con3 .item1{
+    background: url(../img/index_link_3_1.jpg);
+}
+.con3 .item2{
+    background: url(../img/index_link_3_2.jpg);
+}
+.con3 .item3{
+    background: url(../img/index_link_3_3.jpg);
+}
+.con3 .item4{
+    background: url(../img/index_link_3_4.jpg);
+}
